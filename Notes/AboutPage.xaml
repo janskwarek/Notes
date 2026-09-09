@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.AboutPage"
+             Title="About">
+    <ContentPage.Content>
+        <VerticalStackLayout Spacing="10" Margin="10">
+            <HorizontalStackLayout Spacing="10">
+                <Image Source="dotnet_bot.png" SemanticProperties.Description="bot in car" HeightRequest="64"> </Image>
+                <Label FontSize="22" FontAttributes="Bold" Text="Notes" VerticalOptions="End">
+                </Label>
+                <Label FontSize="22" Text="v1.0" VerticalOptions="End"></Label>
+            </HorizontalStackLayout>
+            <Label Text="This app was writen in XAML and C# in .NET MAUI"></Label>
+            <Button Text="Lern more..." Clicked="LernMore_Clicks"></Button>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
