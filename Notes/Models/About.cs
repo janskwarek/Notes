@@ -9,4 +9,5 @@ internal class About
     public string MoreInfoText => "Learn more ...";
     public string LogoSource => "dotnet_bot.png";
     public string LogoDescription => "Bot dontnetowy";
+    public string AddButtonText => "Add";
 }

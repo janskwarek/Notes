@@ -13,11 +13,12 @@ public partial class AboutPage : ContentPage
         InitializeComponent();
         
     }
-    if(BindingContect is Models.About about){
-        await Launcher.Deafult.OpenAsync(about.MoreInfoUrl);
-    }
+   
     private async void LernMore_Clicks(object? sender, EventArgs e)
     {
         await Launcher.Default.OpenAsync("https://aka.ms/maui");
+        if(BindingContext is Models.About about){
+            await Launcher.Default.OpenAsync(about.MoreInfoUrl);
+        }
     }
 }

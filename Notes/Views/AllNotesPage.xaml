@@ -7,7 +7,7 @@
              x:DataType="models:AllNotes"
              Title="Your Notes">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Clicked="Add_Clicked" IconImageSource="{FontImageSource Glyph="+",Color="Black", Size=22}"></ToolbarItem>
+        <ToolbarItem Text="{Binding AddButtonText}" Clicked="Add_Clicked" IconImageSource="{FontImageSource Glyph='+', Color='Black', Size=22}"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         

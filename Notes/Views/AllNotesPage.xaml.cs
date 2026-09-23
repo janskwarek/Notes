@@ -12,4 +12,9 @@ public partial class AllNotesPage : ContentPage
     {
         InitializeComponent();
     }
+
+    private void Add_Clicked(object? sender, EventArgs e)
+    {
+        throw new NotImplementedException();
+    }
 }
