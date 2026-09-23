@@ -36,11 +36,15 @@ public partial class NotePage : ContentPage
     }
     private void SaveButton_Clicked(object? sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        File.WriteAllText(_fileName, TextEditor.Text);
     }
 
     private void DeleteButton_Clicked(object? sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        if(File.Exists(_fileName))
+        {
+            File.Delete(_fileName);
+        }
+        TextEditor.Text = string .Empty;
     }
 }

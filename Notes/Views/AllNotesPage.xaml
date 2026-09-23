@@ -9,7 +9,12 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="{Binding AddButtonText}" Clicked="Add_Clicked" IconImageSource="{FontImageSource Glyph='+', Color='Black', Size=22}"/>
     </ContentPage.ToolbarItems>
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+   <CollectionView.ItemTemplate>
+       <DataTemplate x:DataType="models:Note">
+           <StackLayout>
+               <Label Text="{Binding Text}" FontSize="22"/>
+               <Label Text="{Binding Date}" FontSize="18"></Label>
+           </StackLayout>
+       </DataTemplate>
+   </CollectionView.ItemTemplate>
 </ContentPage>
